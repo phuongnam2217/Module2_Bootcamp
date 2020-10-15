@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, helvetica;
+  /* text-shadow: 3px -1px 4px rgba(0, 0, 0, 0.534); */
+}
+input:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  margin: 0 auto;
+  padding: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.images img {
+  opacity: 0.8;
+}
+.text1,
+.text2 {
+  position: absolute;
+}
+/* .text {
+  text-align: center;
+} */
+.text1 {
+  width: 50%;
+  top: 20%;
+  left: 40%;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.534);
+}
+.text2 {
+  width: 50%;
+  top: 40%;
+  left: 27%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.534),
+    3px 1px 4px rgba(0, 0, 0, 0.534);
+}
+.container {
+  /* background-image: url("../images/background.jpg");
+  background-size: contain; */
+  background-color: rgba(192, 235, 255, 0.418);
+}
+.container-left {
+  width: 20%;
+  float: left;
+}
+.container-right {
+  width: 80%;
+  float: right;
+}
+.products {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.title {
+  text-align: center;
+  color: black;
+  padding-top: 15px;
+}
+.title p {
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.534);
+}
+.product {
+  text-align: center;
+  margin: 5px auto;
+  width: 24%;
+  background-color: rgba(0, 0, 0, 0.281);
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 2px 3px 3px black;
+}
+
+.product img {
+  width: 70%;
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 250px;
+  max-height: 250px;
+  border: 1px solid #838282;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px black;
+  transform: scale(1);
+}
+.image {
+  overflow: auto;
+}
+.product img:hover {
+  transform: scale(1.05);
+  transition: all 1s ease;
+}
+.sku {
+  margin: 10px auto;
+  font-size: 1.4rem;
+  color: blue;
+  font-weight: 600;
+}
+.sold {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 1.3rem;
+  color: red;
+  text-align: left;
+}
+.pricestock {
+  overflow: auto;
+}
+.price {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: red;
+  font-size: 1.3rem;
+}
+.stock {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: red;
+  font-size: 1.3rem;
+}
+.view-button {
+  overflow: auto;
+  margin-top: 10px;
+}
+.view {
+  float: left;
+  margin-left: 10px;
+  color: red;
+  font-size: 1.2rem;
+}
+.view-button a {
+  float: right;
+  margin-right: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  padding: 5px 12px;
+  border: none;
+  background-color: cyan;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.view-button a:hover {
+  background-color: red;
+  color: white;
+  transition: 0.5s;
+}
+.footer {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  overflow: auto;
+  background-color: #f1f1f1;
+}
+
+.footer h2 {
+  padding: 0.6em;
+  font-size: 2rem;
+}
+.infor {
+  width: 40%;
+  margin: 0 auto;
+  padding: 1em auto;
+  background-color: rgba(0, 0, 0, 0.247);
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px black;
+}
+.infor div {
+  padding: 0.5em 0;
+}
+.Erorr {
+  color: red;
+}
+.ten,
+.sdt,
+.email,
+.maso {
+  overflow: auto;
+}
+.ten span,
+.sdt span,
+.email span,
+.maso span {
+  float: left;
+  width: 50%;
+  padding-top: 5px;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+.ten input,
+.sdt input,
+.email input,
+.maso input {
+  float: right;
+  padding: 5px 0;
+  width: 46%;
+  margin-right: 4%;
+}
+.submit input {
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: rgb(238, 255, 0);
+}
+.submit input:hover {
+  background-color: blue;
+  color: white;
+  transition: 1s;
+}
+@media (max-width: 1070px) {
+  .product {
+    width: 33%;
+  }
+  .text1 {
+    font-size: 2rem;
+  }
+  .text2 {
+    font-size: 1.5rem;
+  }
+  .title p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .product {
+    width: 49%;
+  }
+  .text1 {
+    font-size: 1.5rem;
+  }
+  .text2 {
+    font-size: 1rem;
+  }
+  .infor {
+    width: 60%;
+  }
+  .ten span,
+  .sdt span,
+  .email span,
+  .maso span {
+    width: 98%;
+    margin-left: 2%;
+    float: left;
+  }
+  .ten input,
+  .sdt input,
+  .email input,
+  .maso input {
+    width: 90%;
+    margin: 0 auto;
+    float: left;
+    margin-left: 5%;
+  }
+  .infor div {
+    padding: 0.5em 0;
+  }
+}
+@media (max-width: 520px) {
+  .product {
+    width: 80%;
+  }
+  .text1 {
+    font-size: 1rem;
+  }
+  .text2 {
+    font-size: 0.5rem;
+  }
+  /* .product img {
+    width: 80%;
+  } */
+  .infor {
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .product img {
+    min-width: 150px;
+    min-height: 150px;
+  }
+  .price,
+  .stock,
+  .view {
+    font-size: 1rem;
+  }
+  .view {
+    padding-top: 3px;
+  }
+}

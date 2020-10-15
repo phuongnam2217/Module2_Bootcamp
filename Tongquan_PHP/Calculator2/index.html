@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        width: 200px;
+        border: 1px solid black;
+      }
+      input,
+      a {
+        margin: 10px auto;
+        margin-bottom: 0;
+        padding: 7px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="http://localhost:4545/Tongquan_PHP/Calculator2" method="post">
+      <input
+        type="text"
+        name="product"
+        id=""
+        placeholder="Product Description"
+      />
+      <input type="text" name="price" id="" placeholder="List Price" />
+      <input type="text" name="percent" id="" placeholder="Discount Percent:" />
+      <a href="http://localhost:4545/Calculator2"
+        ><input type="submit" name="" id="" value="submit"
+      /></a>
+    </form>
+  </body>
+</html>
